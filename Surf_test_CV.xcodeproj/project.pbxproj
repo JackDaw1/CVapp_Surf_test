@@ -24,6 +24,8 @@
 		FE6599B42A78ECBE0079D7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6599B72A78ECBE0079D7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE6599B92A78ECBE0079D7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6599BF2A799D880079D7F1 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		FE6599C02A799EAC0079D7F1 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,8 @@
 				FE6599B42A78ECBE0079D7F1 /* Assets.xcassets */,
 				FE6599B62A78ECBE0079D7F1 /* LaunchScreen.storyboard */,
 				FE6599B92A78ECBE0079D7F1 /* Info.plist */,
+				FE6599BF2A799D880079D7F1 /* SFProDisplay-Bold.ttf */,
+				FE6599C02A799EAC0079D7F1 /* SFProDisplay-Regular.ttf */,
 			);
 			path = Surf_test_CV;
 			sourceTree = "<group>";

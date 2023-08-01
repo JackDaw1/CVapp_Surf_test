@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     
     var skillsArray:[String] = Array()
     
-    
+    @IBOutlet weak var photo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        photo.layer.cornerRadius = photo.frame.size.width / 2
+               photo.clipsToBounds = true
+               photo.layer.borderWidth = 3
+               photo.layer.borderColor = UIColor.white.cgColor
     }
-
+    
     func createSkillSet(OnView view: UIView, withArray data:[AnyObject]) {
 
         for tempView in view.subviews {
@@ -63,7 +67,6 @@ class ViewController: UIViewController {
             view.addSubview(bgView)
             tag = tag  + 1
         }
-        
     }
     
     @objc func removeSkill(_ sender: AnyObject) {
@@ -86,9 +89,6 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Добавить", style: .default, handler: { [self] _ in
             let skillTextField = alert.textFields![0]
             self.skillTextField = skillTextField
-//            else {
-//                return
-//            }
             self.skillsArray.append(skillTextField.text!)
             self.createSkillSet(OnView: self.view, withArray: skillsArray as [AnyObject])
         }))
