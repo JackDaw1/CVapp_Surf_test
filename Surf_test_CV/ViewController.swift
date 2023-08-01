@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //private var skillTextField: UITextField!
     var skillTextField: UITextField = UITextField()
     
     var skillsArray:[String] = Array()
@@ -17,8 +16,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
     }
 
     func createSkillSet(OnView view: UIView, withArray data:[AnyObject]) {
@@ -53,6 +50,7 @@ class ViewController: UIViewController {
             textlable.textColor = UIColor.white
             bgView.addSubview(textlable)
             
+            //кнопка для удаление элемента
             let button = UIButton(type: .custom)
             button.frame = CGRect(x: bgView.frame.size.width - 2.5 - 23.0, y: 3.0, width: 23.0, height: 23.0)
             button.backgroundColor = UIColor.white
