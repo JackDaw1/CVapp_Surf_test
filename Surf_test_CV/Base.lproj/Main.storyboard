@@ -60,6 +60,16 @@
                                     <constraint firstAttribute="height" constant="108" id="bFV-p1-Dbl"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои навыки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAa-Mx-5ac">
+                                <rect key="frame" x="16" y="467.33333333333331" width="311" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V2q-n4-Hv4"/>
+                                    <constraint firstAttribute="width" constant="311" id="ePc-R9-LYR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXE-m1-9pu">
                                 <rect key="frame" x="335" y="467" width="48.666666666666686" height="34.333333333333314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,9 +83,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tAa-Mx-5ac" firstAttribute="top" secondItem="Np3-EC-uMo" secondAttribute="top" id="1Ev-W3-9y8"/>
+                            <constraint firstItem="tAa-Mx-5ac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="24k-Bo-L1J"/>
+                            <constraint firstItem="tAa-Mx-5ac" firstAttribute="top" secondItem="Np3-EC-uMo" secondAttribute="top" id="8re-ua-P3U"/>
+                            <constraint firstItem="tAa-Mx-5ac" firstAttribute="top" secondItem="Np3-EC-uMo" secondAttribute="top" id="Ezx-tn-k7z"/>
                             <constraint firstItem="E7J-MM-s9Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="KMX-N2-Ui3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7J-MM-s9Z" secondAttribute="trailing" constant="51" id="LBi-dB-8PU"/>
                             <constraint firstItem="8tc-J7-Ss7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="LNG-Su-nAt"/>
+                            <constraint firstItem="tAa-Mx-5ac" firstAttribute="top" secondItem="E7J-MM-s9Z" secondAttribute="bottom" constant="40" id="QWZ-03-FBS"/>
                             <constraint firstItem="RHW-5n-zbR" firstAttribute="top" secondItem="8tc-J7-Ss7" secondAttribute="bottom" constant="42" id="Tr5-cq-hPk"/>
                             <constraint firstItem="E7J-MM-s9Z" firstAttribute="top" secondItem="RHW-5n-zbR" secondAttribute="bottom" constant="16" id="YWa-EE-nt6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tc-J7-Ss7" secondAttribute="trailing" constant="152" id="b4J-2Y-pvr"/>

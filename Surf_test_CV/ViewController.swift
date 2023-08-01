@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         }
         
         var xPos:CGFloat = 15.0
-        var ypos: CGFloat = 130.0
+        var ypos: CGFloat = 500.0
         var tag: Int = 1
         for str in data  {
             let startstring = str as! String
@@ -94,14 +94,7 @@ class ViewController: UIViewController {
             self.skillsArray.append(skillTextField.text!)
             self.createSkillSet(OnView: self.view, withArray: skillsArray as [AnyObject])
         }))
-
-        
-        
-        
-        
     }
-    
-
 }
 
 extension String {
