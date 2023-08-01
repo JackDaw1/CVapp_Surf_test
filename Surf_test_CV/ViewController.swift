@@ -77,25 +77,26 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title: "Добавление навыка", message: "Введите название навыка, которым вы владеете", preferredStyle: .alert)
         present(alert, animated: true)
+        
         //textfield
         alert.addTextField { field in
             field.placeholder = "Введите название"
         }
+        
         //buttons
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Добавить", style: .default, handler: { _ in
-//            guard let fields = alert.textFields, fields.count == 1
+        alert.addAction(UIAlertAction(title: "Добавить", style: .default, handler: { [self] _ in
             let skillTextField = alert.textFields![0]
             self.skillTextField = skillTextField
 //            else {
 //                return
 //            }
+            self.skillsArray.append(skillTextField.text!)
+            self.createSkillSet(OnView: self.view, withArray: skillsArray as [AnyObject])
         }))
 
         
         
-        skillsArray.append(skillTextField.text!)
-        createSkillSet(OnView: self.view, withArray: skillsArray as [AnyObject])
         
         
     }
